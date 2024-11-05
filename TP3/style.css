@@ -1,0 +1,41 @@
+
+.timer-container {
+    position: absolute;
+    top: 45px;
+    right: 35%;
+    font-size: 24px;
+    color: white;
+    background-color: #FF6F1C;
+    padding: 10px;
+}
+
+.mje-container {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF6F1C;
+    top: 120px;
+    right: 29%;
+    pointer-events: none; /* Para no interferir con el canvas */
+}
+
+
+.game-playing {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    z-index: 1;
+    width: 80px;
+}
+.game-playing button {
+   width: 80px;
+   justify-content: center;
+   align-items: center;
+}
+
+.none {
+    display: none;
+}

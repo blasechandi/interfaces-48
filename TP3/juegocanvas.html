@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego 4 en Linea</title>
+</head>
+<body>
+    
+    <canvas class="pointer-events"> </canvas> 
+    
+    <div class="timer-container">
+        <span id="timer-display">01:30</span>
+    </div>
+    
+
+    <div class="mje-container">
+        <!-- Contenedor para el mensaje de tiempo agotado -->
+        <span id="mensaje-tiempo-fuera" class="none">¡Se quedó sin tiempo!</span>
+        <span id="mensaje-ganadorAngel" class="none">Ganaron los Angeles</span>
+        <span id="mensaje-ganadorDemonio" class="none">Ganaron los Demonios</span>
+    </div>
+
+
+    <div class="game-playing">
+        <button type="submit" id="restart">Reiniciar</button>
+    </div>
+    
+
+    <script src="js/Ficha.js"></script>
+    <script src="js/Tablero.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+</html>

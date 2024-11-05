@@ -1,3 +1,2 @@
-# interfaces-48
-TP Interfaces Grupo 48
-Integrantes: Bandeo Thomas, Echandi Blas
+# # Grupo 48 
+# # Integrantes: Bandeo, Thomas Manuel - Echandi, Blas Imanol
