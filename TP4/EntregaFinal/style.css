@@ -4,6 +4,8 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+
+
 h1{
     font-size: 60px;
 }
@@ -30,14 +32,12 @@ header{
     width: 1280px;
 }
 
-.sticky{
-    position: fixed;
-    z-index: 2;
-}
+
 
 .hamburguesa{
     margin-left: 100px;
 }
+
 
 .linea{
     width: 34px;
@@ -237,6 +237,7 @@ header{
     height: 218px;
     top: 2500px;
     position: absolute;
+    text-align: left;
 }
 
 
@@ -255,3 +256,105 @@ header{
 
 
 
+/* ///////// PARALLAX 4 //////////// */
+
+.parallax4{
+    margin-top: 24px;
+    width: 1280px;
+    height: 1218px;
+    background-image: url("imagenes/parallax4/fondovioleta.png");
+    background-size: cover;
+    
+}
+
+.tituloP4 {
+    width: 950px;
+    height: 153px;
+    left: 165px;
+    margin-top: 175px;
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.tituloP4>h1>span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.btnP4 {
+    margin-top: 62px;
+    width: 540px;
+    height: 66px;
+    border-radius: 111px;
+    background-color: #83C252;
+    position: absolute;
+    left: 370px;
+    top: 3220px;
+    font-size: 31px;
+    color: white;
+    box-shadow: 4px 5px 0px 8px #02187E;
+    outline: 8px solid white;
+}
+
+.parallax4>img {
+    margin-top: 450px;
+    position: absolute;
+}
+
+
+/* ////////// PARALLAX 5 /////////// */
+
+
+.parallax5{
+    width: 1280px;
+    min-height: 1000px;
+    background-color: aliceblue;
+}
+.parallax5>h1 {
+    margin-left: 100px;
+    top: 4161px;
+    position: absolute;
+}
+
+.imagenes-scroll {
+    margin-top: 68px;
+    left: 243px;
+    top: 4286px;
+    position: absolute;
+}
+.container-flex {
+    display: flex;
+    flex-direction: row;
+}
+.texto-scroll {
+    margin-top: 68px;
+    position: absolute;
+    left: 713px;
+    top: 4377px;
+    height: 180px;
+    width: 467px;
+}
+
+.texto-scroll>div>h3{
+    margin: 0px;
+    font-weight:400;
+    white-space: nowrap; 
+}
+
+
+
+.texto-scroll>div {
+    margin-bottom: 267px;
+}
+
+
+
+/* //////// PARALLAX 6 */
+
+.parallax6{
+    width: 1280px;
+    height: 1000px;
+    background-color: yellow;
+}
