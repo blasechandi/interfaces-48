@@ -264,7 +264,6 @@ header{
     height: 1218px;
     background-image: url("imagenes/parallax4/fondovioleta.png");
     background-size: cover;
-    
 }
 
 .tituloP4 {
@@ -352,9 +351,78 @@ header{
 
 
 /* //////// PARALLAX 6 */
-
 .parallax6{
     width: 1280px;
-    height: 1000px;
-    background-color: yellow;
+    height: 1444px;
+}
+
+.fondo6{
+    width: 1280px;
+    position: absolute;
+}
+
+.tituloP6{
+    width: 802px;
+    height: 171px;
+    margin-top: 308px;
+    margin-left: 100px;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+}
+
+.fondo2P6{
+    margin-top: 572px;
+    position: absolute;
+    margin-left: 100px;
+}
+
+
+.robot3P6{
+    position: absolute;
+    left: 731px;
+    margin-top: 352px;
+}
+
+
+
+/* //////// PARALLAX 7 */
+
+
+.parallax7{
+    width: 1280px;
+    height: 973px;
+    background-color: antiquewhite;
+}
+
+.robot1P7{
+    position: absolute;
+    left: 630px;
+}
+
+.TituloP7{
+   width: 746px;
+   height: 285px;
+   margin-left: 102px;
+   margin-top: 150px;
+   position: absolute;
+   color: #9D2121;
+}
+
+.textoP7{
+    width: 467px;
+    height: 190px;
+    margin-left: 102px;
+    margin-top: 560px;
+    position: absolute;
+}
+
+
+
+/* //////// PARALLAX 8 */
+
+.parallax8{
+    width: 1280px;
+    height: 729px;
+    background-color: rgb(248, 161, 47);
 }
