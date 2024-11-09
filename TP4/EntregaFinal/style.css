@@ -70,8 +70,6 @@ header {
 .parallax1 {
     width: 1280px;
     height: 960px;
-    overflow: hidden; /* Oculta los elementos que sobresalgan */
-    position: relative; /* Para que los elementos posicionados en 'absolute' se recorten dentro del contenedor */
 }
 
 
@@ -209,12 +207,12 @@ header {
 
 .robot5 {
     left: 787px;
+    top: 867px;
 }
 
 .robot4 {
     left: 48px;
-    margin-top: 537px;
-    z-index: 2;
+    top: 1491px;
 }
 
 .CarruselP2 {
@@ -222,6 +220,7 @@ header {
     height: 324px;
     left: 236px;
     margin-top: 336px;
+    top: 1290px;
     position: absolute;
     border-radius: 77px;
     border: solid 29px #1B428F;
