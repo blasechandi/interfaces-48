@@ -28,8 +28,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 103px;
-    background-color: #00cbd6;
-    width: 1280px;
+    background-color: #00d0d4;
+    width: 1279px;
 }
 
 
@@ -55,12 +55,13 @@ header {
     height: 50px;
     border-radius: 111px;
     background-color: #83C252;
-    border: solid #ffffff 8px;
-    box-shadow: 4px 4px 0px 0px #02197d;
+    outline: solid #ffffff 8px;
+    box-shadow: 4px 5px 0px 8px #02197d;
     margin-right: 100px;
     color: white;
     font-size: 20px;
     font-weight: 900;
+    border-style: none;
 }
 
 .none {
@@ -108,20 +109,20 @@ header {
 }
 
 .robot3 {
-    left: 752px;
-    top: 338px;
+    left: 697px;
+    top: 347px;
     z-index: 1;
 }
 
 .robot2 {
     left: 536px;
-    top: 426px;
+    top: 414px;
     z-index: 2;
 }
 
 .robot1 {
     left: 411px;
-    top: 527px;
+    top: 510px;
     z-index: 3;
 }
 
@@ -154,12 +155,12 @@ header {
 }
 
 .sombra2{
-    left:590px;
-    top: 727px;
+    left:585px;
+    top: 710px;
 }
 .sombra3{
-    left:724px;
-    top: 697px;
+    left:700px;
+    top: 680px;
 }
 
 
@@ -201,7 +202,7 @@ header {
     width: 704px;
     height: 154px;
     left: 100px;
-    margin-top: 214px;
+    margin-top: 200px;
     color: #1B428F;
 }
 
@@ -212,20 +213,19 @@ header {
 
 .robot4 {
     left: 48px;
-    top: 1491px;
+    top: 1505px;
 }
 
 .CarruselP2 {
-    width: 576px;
-    height: 324px;
+    width: 518px;
+    height: 266px;
     left: 236px;
     margin-top: 336px;
-    top: 1290px;
     position: absolute;
     border-radius: 77px;
     border: solid 29px #1B428F;
-    background-image: url("imagenes/parallax2/carrusel1.png");
-    background-size: contain;
+    background-image: url("imagenes/parallax2/carrusel.png");
+    background-size: cover;
 }
 
 
@@ -411,9 +411,9 @@ header {
 }
 
 .fondo2P6 {
-    width: 746px;
-    height: 394px;
-    margin-top: 572px;
+    width: 748px;
+    height: 396px;
+    margin-top: 555px;
     position: absolute;
     margin-left: 100px;
     border: 29px solid white;
@@ -442,7 +442,8 @@ header {
 
 .robot1P7 {
     position: absolute;
-    left: 630px;
+    left: 660px;
+    margin-top: 20px;
 }
 
 .TituloP7 {
