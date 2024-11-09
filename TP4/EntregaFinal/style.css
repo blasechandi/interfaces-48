@@ -70,6 +70,8 @@ header {
 .parallax1 {
     width: 1280px;
     height: 960px;
+    overflow: hidden; /* Oculta los elementos que sobresalgan */
+    position: relative; /* Para que los elementos posicionados en 'absolute' se recorten dentro del contenedor */
 }
 
 
@@ -185,6 +187,8 @@ header {
 .parallax2 {
     width: 1280px;
     height: 894px;
+    overflow: hidden; /* Oculta los elementos que sobresalgan */
+    position: relative; /* Para que los elementos posicionados en 'absolute' se recorten dentro del contenedor */
 }
 
 .TituloP2 {
@@ -207,19 +211,16 @@ header {
 
 .robot5 {
     left: 787px;
-    top: 867px;
 }
 
 .robot4 {
     left: 48px;
-    top: 1491px;
 }
 
 .CarruselP2 {
     width: 576px;
     height: 324px;
     left: 236px;
-    top: 1290px;
     position: absolute;
     border-radius: 77px;
     border: solid 29px #1B428F;
