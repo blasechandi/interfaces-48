@@ -5,7 +5,6 @@ body {
 }
 
 
-
 h1 {
     font-size: 60px;
 }
@@ -30,6 +29,7 @@ header {
     height: 103px;
     background-color: #00d0d4;
     width: 1279px;
+    margin-bottom: 20px;
 }
 
 
@@ -81,60 +81,57 @@ header {
 
 .logo {
     left: 360px;
-    top: 55px;
+    margin-top: 55px;
 }
 
 .arbol1 {
     z-index: 3;
-    left: -153px;
-    top: -1px;
+    left: -145px;
 }
 
 .arbusto {
     z-index: 2;
-    top: 717px;
+    margin-top: 640px;
     left: 161px;
 }
 
 .arbusto1 {
     z-index: 5;
-    top: 821px;
+    margin-top: 750px;
     left: 197px;
 }
 
 .piedraIzq {
     z-index: 4;
     left: 129px;
-    top: 793px;
+    margin-top: 720px;
 }
 
 .robot3 {
     left: 697px;
-    top: 347px;
+    margin-top: 339px;
     z-index: 1;
 }
 
 .robot2 {
     left: 536px;
-    top: 414px;
+    margin-top: 404px;
     z-index: 2;
 }
 
 .robot1 {
     left: 411px;
-    top: 510px;
+    margin-top: 501px;
     z-index: 3;
 }
 
 .arbol2 {
     left: 881px;
-    top: 106px;
     z-index: 3;
 }
 
 .arbol3 {
     left: 1080px;
-    top: 278px;
     z-index: 1;
 }
 
@@ -208,12 +205,12 @@ header {
 
 .robot5 {
     left: 787px;
-    top: 867px;
+    margin-top: -120px;
 }
 
 .robot4 {
     left: 48px;
-    top: 1505px;
+    margin-top: 540px;
 }
 
 .CarruselP2 {
@@ -248,27 +245,27 @@ header {
 
 .img1P3 {
     left: 100px;
-    top: 2174px;
+    margin-top: 350px;
     background-image: url("imagenes/parallax3/img1P3.png");
 }
 
 .img2P3 {
     left: 473px;
-    top: 2174px;
+    margin-top: 350px;
     background-image: url("imagenes/parallax3/img2P3.png");
 }
 
 
 .img3P3 {
     left: 847px;
-    top: 2174px;
+    margin-top: 350px;
     background-image: url("imagenes/parallax3/img3P3.png");
 }
 
 .parrafo {
     width: 333px;
     height: 218px;
-    top: 2500px;
+    margin-top: 680px;
     position: absolute;
     text-align: left;
 }
@@ -323,7 +320,7 @@ header {
     background-color: #83C252;
     position: absolute;
     left: 370px;
-    top: 3220px;
+    margin-top: 450px;
     font-size: 31px;
     color: white;
     box-shadow: 4px 5px 0px 8px #02187E;
@@ -346,14 +343,14 @@ header {
 
 .parallax5>h1 {
     margin-left: 100px;
-    top: 4161px;
+    margin-top: 174px;
     position: absolute;
 }
 
 .imagenes-scroll {
     margin-top: 68px;
     left: 243px;
-    top: 4286px;
+    margin-top: 300px;
     position: absolute;
 }
 
@@ -366,7 +363,7 @@ header {
     margin-top: 68px;
     position: absolute;
     left: 713px;
-    top: 4377px;
+    margin-top: 400px;
     height: 180px;
     width: 467px;
 }
@@ -400,7 +397,7 @@ header {
 .tituloP6 {
     width: 802px;
     height: 171px;
-    margin-top: 280px;
+    margin-top: 250px;
     margin-left: 100px;
     position: absolute;
     color: white;
