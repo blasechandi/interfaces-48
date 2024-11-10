@@ -91,20 +91,20 @@ header {
 
 .arbusto {
     z-index: 2;
-    margin-top: 640px;
+    margin-top: 718px;
     left: 161px;
 }
 
 .arbusto1 {
     z-index: 5;
-    margin-top: 750px;
+    margin-top: 822px;
     left: 197px;
 }
 
 .piedraIzq {
     z-index: 4;
     left: 129px;
-    margin-top: 720px;
+    margin-top: 794px;
 }
 
 .robot3 {
@@ -128,53 +128,55 @@ header {
 .arbol2 {
     left: 881px;
     z-index: 3;
+    margin-top: 107px;
 }
 
 .arbol3 {
     left: 1080px;
     z-index: 1;
+    margin-top: 278px;
 }
 
 .arbusto2 {
     left: 1080px;
-    top: 661px;
+    margin-top: 662px;
     z-index: 2;
 }
 
 .arbusto3 {
     left: 1028px;
-    top: 630px;
+    margin-top: 630px;
 }
 
 .sombra1{
     left:470px;
-    top: 762px;
+    margin-top: 763px ;
 }
 
 .sombra2{
     left:585px;
-    top: 710px;
+    margin-top: 728px ;
 }
 .sombra3{
     left:700px;
-    top: 680px;
+    margin-top: 698px ;
 }
 
 
 .piedrader1{
     left: 1035px;
-    top: 737px;
+    margin-top: 737px;
     z-index: 3;
 }
 
 .piedrader2{
     left: 1072px;
-    top: 737px;
+    margin-top: 737px;
     z-index: 4;
 }
 .piedrader3 {
     left: 1042px;
-    top: 786px;
+    margin-top: 786px;
     z-index: 5;
 }
 /*             PARALLAX2                      */
@@ -205,7 +207,7 @@ header {
 
 .robot5 {
     left: 787px;
-    margin-top: -120px;
+    margin-top: -90px;
 }
 
 .robot4 {
