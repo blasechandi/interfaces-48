@@ -29,8 +29,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 103px;
-    background-color: #00cdd4;
     width: 1279px;
+    transition: background-color 1.2s ease;
 }
 
 
@@ -181,6 +181,8 @@ nav{
     box-shadow: 0 0 40px #f31717, 0 0 40px #f31717, 0 0 40px #f31717;
     color: #000000;
 }
+
+
 
 
 
