@@ -19,7 +19,6 @@ let img10 = document.querySelector('.img10');
 
 /*cambio de las imagenes del parallax5, a medida que se scrollea los textos*/
 txtS.addEventListener('scroll', function(){
-
     let scrollTop = txtS.scrollTop;
 
     if(scrollTop <= 270){  
@@ -30,7 +29,6 @@ txtS.addEventListener('scroll', function(){
         img0.style.opacity = 0;
         img1.style.opacity = 1;
         img2.style.opacity = 0;
-
     }else if(scrollTop > 610 && scrollTop <= 900){
         img1.style.opacity = 0;
         img2.style.opacity = 1;
@@ -43,11 +41,11 @@ txtS.addEventListener('scroll', function(){
         img3.style.opacity = 0;
         img4.style.opacity = 1;
         img5.style.opacity = 0;
-    }else if(scrollTop > 1610 && scrollTop <= 1930){
+    }else if(scrollTop > 1601 && scrollTop <= 1930){
         img4.style.opacity = 0;
         img5.style.opacity = 1;
         img6.style.opacity = 0;
-    }else if(scrollTop > 1935 && scrollTop <= 2200){
+    }else if(scrollTop > 1931 && scrollTop <= 2200){
         img5.style.opacity = 0;
         img6.style.opacity = 1;
         img7.style.opacity = 0;

@@ -646,18 +646,18 @@ main {
 
 .parallax5 {
     width: 1280px;
-    min-height: 1000px;
+    height: 1100px;
 }
 
 .parallax5>h1 {
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 160px;
     position: absolute;
 }
 
 .imagenes-scroll {
-    margin-top: 170px;
-    left: 243px;
+    margin-top: 333px;
+    left: 165px;
     position: relative;
 }
 
@@ -666,7 +666,8 @@ main {
     opacity: 0;
     transition: opacity 1.4s ease;
 }
-.img0 {
+
+.imagenes-scroll img.img0{
     opacity: 1;
 }
 
@@ -677,10 +678,10 @@ main {
 }
 
 .texto-scroll {
-    margin-top: 268px;
+    margin-top: 420px;
     position: absolute;
     left: 713px;
-    height: 240px;
+    height: 303px;
     width: 467px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -689,7 +690,6 @@ main {
 .texto-scroll>div>h3 {
     margin: 0px;
     font-weight: 400;
-    white-space: nowrap;
 }
 
 .texto-scroll>div {
