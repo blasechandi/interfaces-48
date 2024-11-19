@@ -1042,5 +1042,186 @@ footer {
 .redesfooter {
     position: absolute;
     left: 100px;
-    margin-top: 562px;
+    margin-top: 546px;
+}
+
+
+#dino {
+    /* Tamaño de la viñeta individual */
+    width:112px;
+    height:156px;
+    margin-left: 500px;
+    margin-top: 398px;
+    /* Centramos el elemento */
+    /* Cargamos el sprite sin repetir */
+    background: url("imagenes/footer/sprite3.png") repeat-x;
+    /* Aplicamos la animación "walk": 0.8seg, 8 viñetas y repetimos infinitamente */
+    animation: caida .8s steps(8) infinite;
+}
+
+/* Animación de personaje caminando: Simplemente mueve el sprite sheet hacia la izquierda, realizando el movimiento. */
+@keyframes caida {
+    /* Partimos de la primera viñeta del sprite sheet */
+    0% { background-position:0 }
+    /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+    100% { background-position:-916px }
+}
+
+
+#mago {
+    width:128px;
+    height:156px;
+    background: url("imagenes/footer/sprite2.png") repeat-x;
+    animation: fuego .8s steps(14) infinite;
+    margin-top: 468px;
+}
+
+
+@keyframes fuego {
+    0% { background-position:0 }
+    100% { background-position:-1792px }
+}
+
+
+#magoOscuro {
+    width:128px;
+    height:156px;
+    background: url("imagenes/footer/sprite1.png") repeat-x;
+    animation: capucha .8s steps(9) infinite;
+    margin-top: -145px;
+    margin-left: 1150px;
+}
+
+@keyframes capucha {
+    0% { background-position:0 }
+    100% { background-position:-1152px }
+}
+
+.sprite {
+    position: absolute;
+    z-index: 1;
+}
+.s3 {
+    left: 50%;
+    margin-top: 300px;
+}
+
+
+
+
+
+
+
+/* /////// LOADERRRRR //////// */
+
+/* Fondo semitransparente detrás del loader */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); 
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/******** SPINNER DE CARGA ********/
+
+.container{
+    position: fixed;
+    z-index: 100;
+    top: 10%;
+    left: 30%;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.container--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.container .loader{
+    width: 150px;
+    height: 150px;
+    border: solid 20px #2E6E63;
+    border-top: solid 20px #3FE03F;
+    border-radius: 50%;
+    animation: loader .8s linear infinite;
+
+}
+
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.container .message{
+    color: #ffffff;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    animation: message 1s alternate infinite ease-in-out;
+    font-size: 25px;
+}
+
+
+@keyframes message {
+    0%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.line-box{
+    padding: 2px;
+    width: 300px;
+    height: 20px;
+    border: 2px solid #267591;
+    margin-top: 30px;
+    border-radius: 20px;
+    margin-left: -60px;
+}
+
+.line-box .line {
+    height: 20px;
+    border-radius: 20px;
+    background: #67D295;
+    animation: loading 5s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.robot3{
+    transform: translateX(600px);
+    z-index: 100;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+}
+
+.overlay--hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.75s, visibility 0.75s;
 }
