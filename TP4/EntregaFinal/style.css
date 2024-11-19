@@ -748,12 +748,14 @@ iframe{
     height: 1046px;
 }
 
-.robot1P7 {
-    position: absolute;
-    left: 660px;
-    margin-top: 20px;
+#reveal {
+    height: 980px;
+  left: 456px;
+  margin-top: 77px;
+  position: absolute;
+  width: 858px;
+  z-index: 5;
 }
-
 .TituloP7 {
     width: 746px;
     height: 285px;

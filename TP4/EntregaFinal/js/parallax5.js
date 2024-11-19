@@ -15,7 +15,6 @@ let img8 = document.querySelector('.img8');
 let img9 = document.querySelector('.img9');
 let img10 = document.querySelector('.img10');
 
-//le pongo la opacidad en 1 pq sino no aparece al principio
 
 /*cambio de las imagenes del parallax5, a medida que se scrollea los textos*/
 txtS.addEventListener('scroll', function(){
@@ -49,7 +48,7 @@ txtS.addEventListener('scroll', function(){
         img5.style.opacity = 0;
         img6.style.opacity = 1;
         img7.style.opacity = 0;
-    }else if(scrollTop > 2240 && scrollTop <= 2500){
+    }else if(scrollTop > 2201 && scrollTop <= 2500){
         img6.style.opacity = 0;
         img7.style.opacity = 1;
         img8.style.opacity = 0;

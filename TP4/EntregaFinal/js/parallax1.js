@@ -6,7 +6,6 @@ window.addEventListener("scroll", getScroll)
 // Función que se llama al scrollear, se encarga de llamar a otras funciones
 function getScroll() {
     const y = this.pageYOffset;
-    console.log(y);
     parallaxEffect(y);
 }
 
