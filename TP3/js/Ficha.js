@@ -39,8 +39,8 @@ class Ficha{
         }else{
             //Bloque de código que permite remarcar aquellas fichas consideradas como conjunto ganador
             this.context.drawImage(this.getImagen(), this.posX - this.radius, this.posY - this.radius, this.radius * 2, this.radius * 2);
-            this.context.strokeStyle = "#FF6F1C";
-            this.context.lineWidth = 5;
+            this.context.strokeStyle = "#FF8C00";
+            this.context.lineWidth = 8;
             this.context.stroke();
         }
 

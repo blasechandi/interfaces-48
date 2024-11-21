@@ -2,7 +2,7 @@
 
 class Tablero {
 
-    constructor(ctx, widthCanvas, heightCanvas, filas, columnas, fill, tamFicha) {
+    constructor(ctx, widthCanvas, heightCanvas, filas, columnas, fill, tamFicha, imgIndicador) {
         this.ctx = ctx;
         this.filas = filas;
         this.columnas = columnas;
@@ -12,10 +12,11 @@ class Tablero {
         this.fill = fill;
         this.area = [];
         this.image = new Image();
-        this.image.src = 'images/Casilla.png';
+        this.image.src = 'images/Casillero.png';
         this.tableroDibujado = false;
         this.tamFicha = tamFicha;
         this.conjuntoGanador = [];
+        this.imgIndicador = imgIndicador;
     }
 
     //Inicialización de la matriz, la cual va a ir llenandose a medida que las fichas caen dentro del tablero
@@ -51,17 +52,15 @@ class Tablero {
 
         let x = this.widthCanvas / 2;
         let y = this.heightCanvas / 2;
-
         let widthTotal = this.tamFicha * this.columnas;
         let heightTotal = this.tamFicha * this.filas;
-
+        
         let movX = widthTotal / 2;
         let movY = heightTotal / 2 - (this.tamFicha / 2);
-
+        
         let posX = x - movX;
         let posY = y - movY;
-
-
+    
         for (let f = 0; f < this.filas; f++) {
 
             let auxX = posX;
@@ -88,6 +87,22 @@ class Tablero {
         }
 
     }
+
+    // Nuevo método para dibujar los circulos indicadores de drop
+    drawIndicators() {
+        let x = this.widthCanvas / 2;
+        let y = this.heightCanvas / 2;
+        let widthTotal = this.tamFicha * this.columnas;
+        let movX = widthTotal / 2;
+        let hintsY = y - (this.tamFicha * this.filas / 2) - 40;
+        let hintsX = x - movX;
+
+        for (let f = 0; f < this.columnas; f++) {
+            this.ctx.drawImage(this.imgIndicador, hintsX, hintsY, this.tamFicha, this.tamFicha);
+            hintsX += this.tamFicha;
+        }
+    }
+
 
     //Dada una posicion en fila, columna, el modo de juego escogido, y el jugador, busca si es una jugada ganadora
     esGanador(posX, posY, jugador, modo) {
