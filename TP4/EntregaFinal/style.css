@@ -1112,8 +1112,8 @@ footer {
 .container{
     position: fixed;
     z-index: 100;
-    top: 10%;
-    left: 50%;
+    top: 4%;
+    left: 47%;
     transition: opacity 0.75s, visibility 0.75s;
 }
 
@@ -1123,10 +1123,10 @@ footer {
 }
 
 .container .loader{
-    width: 150px;
-    height: 150px;
-    border: solid 20px #2E6E63;
-    border-top: solid 20px #3FE03F;
+    width: 100px;
+    height: 100px;
+    border: solid 10px #2E6E63;
+    border-top: solid 10px #3FE03F;
     border-radius: 50%;
     animation: loader .8s linear infinite;
 
@@ -1144,11 +1144,11 @@ footer {
 .container .message{
     color: #ffffff;
     position: absolute;
-    top: 30%;
-    left: 42%;
+    top: 28%;
+    left: 29%;
     transform: translate(-50%, -50%);
     animation: message 1s alternate infinite ease-in-out;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 @keyframes message {
@@ -1167,7 +1167,7 @@ footer {
     border: 2px solid #267591;
     margin-top: 30px;
     border-radius: 20px;
-    margin-left: -60px;
+    margin-left: -90px;
 }
 
 .line-box .line {
@@ -1190,7 +1190,7 @@ footer {
     transform: translateX(600px);
     z-index: 100;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 250px;
     left: 0px;
 }
 
