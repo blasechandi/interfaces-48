@@ -1,22 +1,12 @@
 
-window.addEventListener("scroll", getScroll)
-
-
-
-// Función que se llama al scrollear, se encarga de llamar a otras funciones
-function getScroll() {
-    const y = this.pageYOffset;
-    parallaxEffect(y);
-}
-
-// Hace el efecto parallax de la sección "La app más divertida y educativa
-// y para niños de 3 años" de acuerdo al scroll
-function parallaxEffect(y) {
+window.addEventListener("scroll", function() {
     const parallaxItem = document.querySelectorAll(".parallax")
+    const scrollY = this.window.scrollY;
 
     for (const item of parallaxItem) {
         let speed = item.getAttribute("data-speed");
         let initialTop = item.getAttribute("data-initial-top");
-        item.style.top = initialTop - y * speed + "px";  
+        item.style.top = initialTop - scrollY * speed + "px";  
     }
-}
+});
+

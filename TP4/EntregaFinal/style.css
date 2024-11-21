@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    height: 100vh;  
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    background-color: #000000; /* Fondo opcional */
+    justify-content: center; 
+    background-color: #000000; 
 }
   
 .contenedor-principal{
@@ -29,7 +29,13 @@ p {
 }
 
 
-header {
+/*  STICKY */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +46,7 @@ header {
 
 
 .off-screen-menu {
-    height: 50vh;
+    margin-top: 150px;
     position: fixed;
     left: -450px;
     display: flex;
@@ -52,7 +58,7 @@ header {
 }
 
 .off-screen-menu.active {
-    left: 25%;  
+    left: 15%;  
 }
 
 .off-screen-menu ul{
@@ -64,7 +70,7 @@ header {
 .off-screen-menu ul li{
     display: flex;
     align-items: center;
-    background-color: #88de7c;
+    background-color: #02197d;
     margin: 5px;
     text-transform:capitalize;
     width: 300px;
@@ -72,6 +78,19 @@ header {
     font-size: 30px;
     border-radius: 111px;
     padding-left: 20px;
+    box-shadow: none;
+    outline: solid #ffffff 2px;
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+
+.off-screen-menu ul li:hover{
+    background-color: #3c6096;
+    outline: solid #ffffff 2px;
+    box-shadow: 0 0 40px #02197d, 0 0 40px #02197d, 0 0 40px #02197d;
+    color: black;
 }
 
 
@@ -104,8 +123,6 @@ nav{
 }
 
 
-
-
 .ham-menu span:nth-child(1){
     top: 25%;
 }
@@ -130,10 +147,7 @@ nav{
     box-shadow: 0px 0px 0px 0px;
 }
 
-
-
-
-/* Aplica la animación solo cuando el ítem tiene la clase .animate */
+/* Aplica la animación solo cuando el item tiene la clase .animate */
 .off-screen-menu ul li.animate {
     opacity: 0; /* No visibles inicialmente */
     transform: translateX(-100px); /* Comienzan desplazados a la izquierda */
@@ -141,10 +155,6 @@ nav{
     animation-delay: calc(var(--index) * 1s);
 }
 
-
-
-
-/* Keyframes para la animación de entrada */
 @keyframes slide-in {
     0% {
         opacity: 0;
@@ -155,8 +165,8 @@ nav{
         transform: translateX(0);
     }
 }
-/* BOTON */
 
+/* BOTON */
 .btn-animacion3 {
     width: 200px;
     height: 50px;
@@ -170,7 +180,6 @@ nav{
     margin-right: 100px;
     border-style: none;
     /*hasta aca las cosas que tenia el boton pedido*/
-
     transition: all 500ms ease;
     z-index: 1;
     overflow: hidden;
@@ -179,46 +188,12 @@ nav{
     display: block;
 }
 
-
 .btn-animacion3:hover {
     background-color: #ff6f1c;
     outline: solid #7becf0 8px;
     box-shadow: 0 0 40px #f31717, 0 0 40px #f31717, 0 0 40px #f31717;
     color: #000000;
 }
-
-
-
-
-
-/*  STICKY */
-
-.sticky{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 1280px;
-    z-index: 20;
-}
-
-/* Logo pequeño, oculto inicialmente */
-.logo-small {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.logo-small-block{
-    display: block;
-    opacity: 1;
-}
-
-/* Estilos cuando se hace scroll (clase shrink) */
-.logo_img.achicar {
-    transform: scale(0.5);      /* reduce el tamaño del elemento */
-    opacity: 0;
-}
-
 
 /* PARALAXS */
 
@@ -247,15 +222,12 @@ main {
     background-size: 100% auto;
 }
 
-
-.logo_img {
-    position: absolute;
+.logo{
     width: 550px;
     height: 320px;
-    top: 55px;
-    left: 350px;
-    animation: spawnTop .4s ease-out;
-    transition: transform 0.3s ease, opacity 0.3s ease;    /* le da el efecto a la hora de esconderse */
+    transform: translateY(150px);
+    transition: all .5s;
+    margin-left: 120px;
 }
 
 .arbol_izq {
@@ -408,7 +380,6 @@ main {
     left: 705px;
 }
 
-
 .figura_4 {
     position: absolute;
     width: 601.64px;
@@ -426,6 +397,38 @@ main {
     right: -79px;
     animation: spawnTop 1.2s ease-out;
 }
+
+
+@keyframes spawnTop {
+    0% {
+        transform: translateY(-70px);
+    }
+
+    100% {
+        transform: initial;  /* vuelve a la pos inicial */
+    }
+}
+
+@keyframes spawnLeft {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: initial; /* vuelve a la pos inicial */
+    }
+}
+
+@keyframes spawnRight {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: initial; /* vuelve a la pos inicial */
+    }
+}
+
 
 
 .informacion {
@@ -467,14 +470,14 @@ main {
     top: 1329px;
     border-radius: 77px;
     border: solid 29px #1B428F;
-    overflow: hidden; /* Oculta las imágenes fuera del contenedor */
+    overflow: hidden;       /* Oculta las imagenes fuera del contenedor */
 }
 
 .CarruselInfo ul {
     display: flex;
     padding: 0;
     margin: 0;
-    width: 400%; /* Ajusta el ancho según el número de imágenes */
+    width: 400%; /* Ajusta el ancho segun el número de imagenes */
     animation: slideCarruselInfo 12s infinite alternate ease-in-out;
 }
 
@@ -503,37 +506,6 @@ main {
 }
 
 
-@keyframes spawnTop {
-    0% {
-        transform: translateY(-70px);
-    }
-
-    100% {
-        transform: initial;  /* vuelve a la pos inicial */
-    }
-}
-
-@keyframes spawnLeft {
-    0% {
-        transform: translateX(-50px);
-    }
-
-    100% {
-        transform: initial; /* vuelve a la pos inicial */
-    }
-}
-
-@keyframes spawnRight {
-    0% {
-        transform: translateX(50px);
-    }
-
-    100% {
-        transform: initial; /* vuelve a la pos inicial */
-    }
-}
-
-
 
 
 /*  PARALLAX 3  */
@@ -557,13 +529,11 @@ main {
     margin-top: 100px;
 }
 
-
-
 .cuadro{
     width: 333px;
     height: 303px;
     border-radius: 41px;
-    opacity: 0; /* Por defecto, las imágenes están completamente transparentes */
+    opacity: 0; /* Por defecto las imagenes estan completamente transparentes */
     transform: translateY(150px); /* Desplazadas hacia abajo */
     transition: opacity 1s ease-out, transform 1s ease-out;
     border: solid 9px #2982FF;
@@ -574,7 +544,7 @@ main {
 .texto{
     width: 333px;
     height: 218px;
-    opacity: 0; /* Por defecto, los textos están completamente transparentes */
+    opacity: 0; /* Por defecto los textos estan completamente transparentes */
     padding-right: 40px;
     transform: translateY(150px); /* Desplazadas hacia abajo */
     transition: opacity 1s ease-out, transform 1s ease-out;
@@ -588,11 +558,7 @@ main {
 }
 
 
-
-
-/* PARALAX 4 */
-
-/* DOWLOAD SECTION */
+/* PARALAX 4 */ /* DOWLOAD SECTION */
 
 .parallax4 {
     height: 1157px;
@@ -641,8 +607,6 @@ main {
     font-weight: 700;
 }
 
-
-
 #characters {
     margin-top: 390px;
     position: relative;
@@ -654,8 +618,6 @@ main {
 
 
 /*  ////// PARALLAX 5 //////// */
-
-
 
 .parallax5 {
     width: 1280px;
@@ -699,7 +661,6 @@ main {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
 
 .texto-scroll>div>h3 {
     margin: 0px;
@@ -821,10 +782,9 @@ iframe{
 }
 
 .personajes:hover{
-    transform: scale(1.1); /* Agranda la imagen al 110% */
-    filter: brightness(1.5); /* Aumenta el brillo para iluminar */
+    transform: scale(1.1);      /* Agranda la imagen al 110% */
+    filter: brightness(1.5);    /* Aumenta el brillo para iluminar */
 }
-
 
 .personaje1{
     width: 252px;
@@ -878,8 +838,6 @@ iframe{
 }
 
 
-
-
 /* //////// PARALLAX 9 */
 .parallax9 {
     position: relative;
@@ -890,7 +848,6 @@ iframe{
     background-repeat: no-repeat;
     justify-items: center;
 }
-
 
 .fondo2P9 {
     position: absolute;
@@ -1078,6 +1035,8 @@ footer {
 }
 
 
+/* Estilos de los sprite sheets*/
+
 #number1 {
     /* Tamaño de la viñeta individual */
     width: 480px;
@@ -1092,12 +1051,11 @@ footer {
     animation: baile .6s steps(15) infinite;
 }
 
-/* Animación del personaje */
+/* Animacion del personaje */
 @keyframes baile {
     0% { background-position: 0; }
     100% { background-position: -7200px; } /* Desplazamiento correcto */
 }
-
 
 #number9 {
     width:480px;
@@ -1108,12 +1066,10 @@ footer {
     margin-left:350px;
 }
 
-
 @keyframes bailongo {
     0% { background-position:0 }
     100% { background-position:-11520px }
 }
-
 
 #pajarin {
     width:32px;
@@ -1129,25 +1085,14 @@ footer {
     100% { background-position:-192px }
 }
 
-
-
 .sprite {
     position: absolute;
     z-index: 1;
 }
-.s3 {
-    left: 50%;
-    margin-top: 300px;
-}
-
-
-
-
 
 
 
 /* /////// LOADERRRRR //////// */
-
 /* Fondo semitransparente detrás del loader */
 .overlay {
     position: fixed;
@@ -1164,7 +1109,6 @@ footer {
 }
 
 /******** SPINNER DE CARGA ********/
-
 .container{
     position: fixed;
     z-index: 100;
@@ -1177,7 +1121,6 @@ footer {
     opacity: 0;
     visibility: hidden;
 }
-
 
 .container .loader{
     width: 150px;
@@ -1198,7 +1141,6 @@ footer {
     }
 }
 
-
 .container .message{
     color: #ffffff;
     position: absolute;
@@ -1209,7 +1151,6 @@ footer {
     font-size: 25px;
 }
 
-
 @keyframes message {
     0%{
         opacity: .2;
@@ -1218,7 +1159,6 @@ footer {
         opacity: 1;
     }
 }
-
 
 .line-box{
     padding: 2px;

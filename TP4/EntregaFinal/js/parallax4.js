@@ -1,20 +1,17 @@
 let ventanaMov = document.querySelector('.parallax4').addEventListener('mousemove', getMouseMove)
 
-// Función que se llama al mover el mouse, se encarga de llamar a otras funciones
 function getMouseMove(e) {
     const mouseX = e.clientX
     const mouseY = e.clientY
-
-
     charactersMove(mouseX, mouseY)
 }
 
-// Mueve los personajes de la sección "Descubre el juego que convierte
-// las Matemáticas en diversión" de acuerdo a la posición del mouse
+//  Mueve los personajes de la sección "Parallax4" 
+//  Descubre el juego que convierte las Matemáticas en diversion
 function charactersMove(mouseX, mouseY) {
     const characters = document.getElementById('characters');
 
-    // Calcula la dirección opuesta al cursor
+    // Calcula la direccion opuesta al cursor
     const offsetX = (window.innerWidth / 2 - mouseX) / 10;
     const offsetY = (window.innerWidth / 2 - mouseY) / 10;
 

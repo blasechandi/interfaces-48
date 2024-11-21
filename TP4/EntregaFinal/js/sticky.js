@@ -1,18 +1,35 @@
 window.addEventListener("scroll", function() {
-    const logo = document.getElementById("logo_esconder");
-    const logoChiquito  = document.getElementById("logo-chico");
-    let header = document.querySelector("header");
+    const logo = document.querySelector(".logo")
+    let header = document.querySelector(".sticky");
+    const scrollY = this.window.scrollY;
 
-    const scrollY = window.scrollY;
 
-    // Ajusta el valor (ej. 100) según cuándo quieres que se active el efecto
-    if (scrollY > 100) {
-        logo.classList.add("achicar");
-        logoChiquito.classList.add("logo-small-block");
-        header.style.background = "#00D0D5";
+    let efectoWidth = 550 - scrollY * 0.5;
+    let efectoTransform = 110 - scrollY * 0.2;
+    let efectoGradiente = scrollY * 0.1;
+
+    let newHei = 320 - scrollY * 0.3;
+    
+
+    if (efectoWidth > 150) {
+        logo.style.width = efectoWidth + "px";
+        logo.style.height = newHei + "px";
     } else {
-        logo.classList.remove("achicar");
-        logoChiquito.classList.remove("logo-small-block");
-        header.style.background = "transparent";
+        logo.style.width = "150px"
+        logo.style.height = "100px"
     }
+
+
+    if (efectoTransform > 0) {
+        logo.style.transform = "translateY(" + efectoTransform + "px)"
+    } else {
+        logo.style.transform = "translateY(0px)"
+    }
+
+    if (efectoGradiente < 100) {
+        header.style.background = "linear-gradient(180deg, #00D1D5 " + efectoGradiente + "%, rgba(0, 209, 213, 0.12) 87.91%, rgba(1, 208, 213, 0) 100%)"
+    } else {
+        header.style.background = "#00D1D5"
+    }
+
 });
