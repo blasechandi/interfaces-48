@@ -583,5 +583,5 @@ document.getElementById('return2').addEventListener('click', refresh);
 
 //Refresca la página, al volver atrás desde el juego
 function refresh(){
-    window.location.replace("juegocanvas.html");
+    window.location.replace("index.html");
 }
