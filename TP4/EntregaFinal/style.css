@@ -1,5 +1,12 @@
-
 body {
+    margin: 0;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #000000; /* Fondo opcional */
+}
+  
+.contenedor-principal{
     width: 1280px;
     background-color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
@@ -20,8 +27,6 @@ h3 {
 p {
     font-size: 20px;
 }
-
-
 
 
 header {
@@ -1027,8 +1032,9 @@ footer {
     width: 820px;
     height: 361px;
     position: absolute;
-    left: 100px;
+    margin-left: 100px;
     margin-top: 25px;
+    text-align: left;
 }
 
 .textofooter>p, .textofooter>a {
@@ -1043,61 +1049,63 @@ footer {
 
 .redesfooter {
     position: absolute;
-    left: 100px;
+    margin-left: 100px;
     margin-top: 546px;
 }
 
 
-#dino {
+#number1 {
     /* Tamaño de la viñeta individual */
-    width:112px;
-    height:156px;
-    margin-left: 500px;
-    margin-top: 398px;
-    /* Centramos el elemento */
-    /* Cargamos el sprite sin repetir */
-    background: url("imagenes/footer/sprite3.png") repeat-x;
-    /* Aplicamos la animación "walk": 0.8seg, 8 viñetas y repetimos infinitamente */
-    animation: caida .8s steps(8) infinite;
+    width: 480px;
+    height: 480px;
+    margin-left: 830px;
+    margin-top: 200px;
+
+    /* Carga del sprite sin repetir */
+    background: url("imagenes/footer/numero1-Sheet.png") no-repeat;
+
+    /* Animación de la sprite sheet */
+    animation: baile .6s steps(15) infinite;
 }
 
-/* Animación de personaje caminando: Simplemente mueve el sprite sheet hacia la izquierda, realizando el movimiento. */
-@keyframes caida {
-    /* Partimos de la primera viñeta del sprite sheet */
+/* Animación del personaje */
+@keyframes baile {
+    0% { background-position: 0; }
+    100% { background-position: -7200px; } /* Desplazamiento correcto */
+}
+
+
+#number9 {
+    width:480px;
+    height:220px;
+    background: url("imagenes/footer/numero9-Sheet.png") repeat-x;
+    animation: bailongo .8s steps(24) infinite;
+    margin-top: 400px;
+    margin-left:350px;
+}
+
+
+@keyframes bailongo {
     0% { background-position:0 }
-    /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
-    100% { background-position:-916px }
+    100% { background-position:-11520px }
 }
 
 
-#mago {
-    width:128px;
-    height:156px;
-    background: url("imagenes/footer/sprite2.png") repeat-x;
-    animation: fuego .8s steps(14) infinite;
-    margin-top: 468px;
+#pajarin {
+    width:32px;
+    height:100px;
+    background: url("imagenes/footer/Walk.png") repeat-x;
+    animation: Aleteo .8s steps(6) infinite;
+    margin-left: 950px;
+    margin-top: -1070px;
 }
 
-
-@keyframes fuego {
+@keyframes Aleteo {
     0% { background-position:0 }
-    100% { background-position:-1792px }
+    100% { background-position:-192px }
 }
 
 
-#magoOscuro {
-    width:128px;
-    height:156px;
-    background: url("imagenes/footer/sprite1.png") repeat-x;
-    animation: capucha .8s steps(9) infinite;
-    margin-top: -145px;
-    margin-left: 1150px;
-}
-
-@keyframes capucha {
-    0% { background-position:0 }
-    100% { background-position:-1152px }
-}
 
 .sprite {
     position: absolute;
