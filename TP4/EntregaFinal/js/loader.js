@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         robot3.style.transform = 'translateX(' + translateXValue + 'px)';
 
         // si la carga esta complenta, detiene la animacion y ocualta el loader  (podria sumar sacar el gif)
-        if (cargaActual >= 100) {
+        if (cargaActual >= 3) {
             clearInterval(simularCarga);
             loaderContainer.classList.add("container--hidden");
             robot3.classList.add("container--hidden");

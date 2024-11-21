@@ -541,7 +541,7 @@ main {
 .parallax3{
     position: relative;
     width: 1280px;
-    height: 853px;
+    height: 739px;
 }
 .container{
     position: absolute;
@@ -554,15 +554,18 @@ main {
 }
 
 .containerCuadros{
-    margin-top: 250px;
+    margin-top: 100px;
 }
+
+
 
 .cuadro{
     width: 333px;
     height: 303px;
     border-radius: 41px;
     opacity: 0; /* Por defecto, las imágenes están completamente transparentes */
-    transition: opacity 3s ease-in-out;
+    transform: translateY(150px); /* Desplazadas hacia abajo */
+    transition: opacity 1s ease-out, transform 1s ease-out;
     border: solid 9px #2982FF;
     box-shadow: 4px 5px 0px 0px #02187E;
 }
@@ -573,7 +576,8 @@ main {
     height: 218px;
     opacity: 0; /* Por defecto, los textos están completamente transparentes */
     padding-right: 40px;
-    transition: opacity 3s ease-in-out;
+    transform: translateY(150px); /* Desplazadas hacia abajo */
+    transition: opacity 1s ease-out, transform 1s ease-out;
     text-align: left;
     font-size: 20px;
 }
@@ -656,6 +660,7 @@ main {
 .parallax5 {
     width: 1280px;
     height: 1100px;
+    margin-top: -100px;
 }
 
 .parallax5>h1 {
@@ -764,6 +769,7 @@ iframe{
 .parallax7 {
     width: 1280px;
     height: 1046px;
+    margin-top: -100px;
 }
 
 #reveal {
@@ -1031,7 +1037,7 @@ iframe{
 /* //////// FOOTER */
 footer {
     width: 1280px;
-    height: 700px;
+    height: 729px;
     background-color: #5E5E5D;
 }
 
@@ -1068,7 +1074,7 @@ footer {
 .redesfooter {
     position: absolute;
     margin-left: 100px;
-    margin-top: 546px;
+    margin-top: 584px;
 }
 
 
@@ -1077,7 +1083,7 @@ footer {
     width: 480px;
     height: 480px;
     margin-left: 830px;
-    margin-top: 200px;
+    margin-top: 221px;
 
     /* Carga del sprite sin repetir */
     background: url("imagenes/footer/numero1-Sheet.png") no-repeat;
@@ -1098,7 +1104,7 @@ footer {
     height:220px;
     background: url("imagenes/footer/numero9-Sheet.png") repeat-x;
     animation: bailongo .8s steps(24) infinite;
-    margin-top: 400px;
+    margin-top: 426px;
     margin-left:350px;
 }
 
@@ -1163,7 +1169,7 @@ footer {
     position: fixed;
     z-index: 100;
     top: 10%;
-    left: 30%;
+    left: 50%;
     transition: opacity 0.75s, visibility 0.75s;
 }
 
@@ -1244,7 +1250,7 @@ footer {
     transform: translateX(600px);
     z-index: 100;
     position: absolute;
-    top: 500px;
+    margin-top: 300px;
     left: 0px;
 }
 

@@ -14,16 +14,22 @@ window.addEventListener('scroll',()=>{
           setTimeout(function () {
               cuadro1.style.opacity = 1;
               texto1.style.opacity = 1;
+              cuadro1.style.transform = 'translateY(0)';
+              texto1.style.transform = 'translateY(0)';
           }, 1000); 
   
           setTimeout(function () {
-              cuadro2.style.opacity = 1;
-              texto2.style.opacity = 1;
+            cuadro2.style.opacity = 1;
+            cuadro2.style.transform = 'translateY(0)';
+            texto2.style.opacity = 1;
+            texto2.style.transform = 'translateY(0)';
           }, 1300); 
   
           setTimeout(function () {
               cuadro3.style.opacity = 1;
               texto3.style.opacity = 1;
+              cuadro3.style.transform = 'translateY(0)';
+              texto3.style.transform = 'translateY(0)';
           }, 1500);
         }
       }
@@ -34,5 +40,6 @@ window.addEventListener('scroll',()=>{
       texto1.style.opacity = 0;
       texto2.style.opacity = 0;
       texto3.style.opacity = 0;
+
     }
 });
